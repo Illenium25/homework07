@@ -29,34 +29,35 @@
     <!-- Header -->
     <header class="header">
       <div class="conteiner head-conteiner">
-        <nav class="nav-conteiner">
+        <nav class="navigation">
           <a class="logo" href="./index.html">
             Web<span class="studio">Studio</span>
           </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link current" href="./index.html">Студія</a>
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-link current" href="./index.html">Студія</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+            <li class="navigation-list__item">
+              <a class="navigation-link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacts.html">Контакти</a>
+            <li class="navigation-list__item">
+              <a class="navigation-link" href="./contacts.html">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="list-header">
-          <li class="mail-tel">
-            <a class="link-header mail-link" href="mailto:info@devstudio.com">
-              <svg class="mail">
+        <!-- contacts -->
+        <ul class="contacts-header">
+          <li class="contacts-header__item">
+            <a class="header-link" href="mailto:info@devstudio.com">
+              <svg class="header-link__icon mail">
                 <use href="./images/sprite/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="mail-tel">
-            <a class="link-header phone-link" href="tel:+380961111111">
-              <svg class="phone">
+          <li class="contacts-header__item">
+            <a class="header-link" href="tel:+380961111111">
+              <svg class="header-link__icon phone">
                 <use href="./images/sprite/sprite.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -67,11 +68,11 @@
     </header>
 
     <main>
-      <!-- First Box -->
-      <section class="first-box">
+      <!-- hero -->
+      <section class="hero">
         <div class="conteiner">
-          <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open class="main-button" type="button">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open class="hero-button" type="button">
             Замовити послугу
           </button>
         </div>
@@ -452,79 +453,81 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="conteiner foot-box">
+      <div class="conteiner footer-box">
         <div>
-          <a class="web-foot" href="/">
-            Web<span class="studio-foot">Studio</span>
+          <a class="logo" href="/">
+            Web<span class="studio-footer">Studio</span>
           </a>
           <address class="address">
-            <p class="addr">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="foot-link-list">
-              <li class="item-foot">
-                <a class="link-foot" href="mailto:info@devstudio.com">
+            <p class="address__info">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="address-list">
+              <li class="address-list__item">
+                <a class="contacts-footer" href="mailto:info@devstudio.com">
                   info@devstudio.com
                 </a>
               </li>
-              <li class="item-foot">
-                <a class="link-foot" href="tel:+380961111111"
+              <li class="address-list__item">
+                <a class="contacts-footer" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="soc-box-foot">
-          <h3 class="join-us">ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="soc-list-foot">
-            <li class="soc-item-foot">
-              <a class="soc-link-foot" href="">
-                <svg class="icon-foot">
+        <!-- official pages -->
+        <div class="official-pages">
+          <h2 class="official-pages__title">ПРИЄДНУЙТЕСЬ</h2>
+          <ul class="page-list">
+            <li class="page-list__item">
+              <a class="pages-link" href="">
+                <svg class="pages-link__icon">
                   <use href="./images/sprite/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-item-foot">
-              <a class="soc-link-foot" href="">
-                <svg class="icon-foot">
+            <li class="page-list__item">
+              <a class="pages-link" href="">
+                <svg class="pages-link__icon">
                   <use href="./images/sprite/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-item-foot">
-              <a class="soc-link-foot" href="">
-                <svg class="icon-foot">
+            <li class="page-list__item">
+              <a class="pages-link" href="">
+                <svg class="pages-link__icon">
                   <use href="./images/sprite/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-item-foot">
-              <a class="soc-link-foot" href="">
-                <svg class="icon-foot">
+            <li class="page-list__item">
+              <a class="pages-link" href="">
+                <svg class="pages-link__icon">
                   <use href="./images/sprite/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="foot-form-field">
-          <div class="foot-form-box">
-            <h2 class="foot-form-title">ПІДПИСШІТЬСЯ НА РОЗСИЛКУ</h2>
-            <div class="btn-input-foot">
-              <form action="" class="foot-form">
+        <!-- form in footer -->
+        <div class="footer-form-area">
+          <div>
+            <h2 class="footer-form-title">ПІДПИСШІТЬСЯ НА РОЗСИЛКУ</h2>
+            <div class="button-input-foot">
+              <form action="" class="footer-form">
                 <div class="foot-input-box">
-                  <input class="foot-input" placeholder="E-mail" type="text" />
+                  <input
+                    class="footer-input"
+                    placeholder="E-mail"
+                    type="text"
+                  />
                 </div>
               </form>
-              <div class="foot-submit-button">
-                <button class="foot-form-button" type="submit">
-                  <div class="box-in-foot-btn">
-                    <span class="foot-form-button-text">Підписатися</span>
-                    <svg class="icon-foot-form">
-                      <use
-                        href="./images/sprite/sprite.svg#icon-telegram"
-                      ></use>
-                    </svg>
-                  </div>
+              <div class="footer-button">
+                <button class="footer-button__form" type="submit">
+                  Підписатися
+                  <svg class="footer-button__icon">
+                    <use href="./images/sprite/sprite.svg#icon-telegram"></use>
+                  </svg>
                 </button>
               </div>
             </div>

@@ -41,12 +41,9 @@
   color: var(--logo-color);
   font-family: var(--logo-text);
   font-size: 26px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.78px;
   text-decoration: none;
-  margin-right: 93px;
 }
 
 .studio {
@@ -58,23 +55,24 @@
   letter-spacing: 0.78px;
 }
 
-.nav-conteiner {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.nav-list {
+.navigation-list {
   list-style: none;
   display: flex;
   margin: 0;
+  margin-left: 91px;
   padding-left: 0;
 }
 
-.nav-item {
+.navigation-list__item {
   position: relative;
 }
 
-.nav-link.current::after {
+.contacts-header.current::after {
   content: "";
   display: block;
   width: 100%;
@@ -87,7 +85,7 @@
   border-radius: 4px;
 }
 
-.nav-link {
+.navigation-link {
   color: var(--text-color);
   font-family: var(--text);
   font-size: 14px;
@@ -102,8 +100,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.navigation-link:hover,
+.navigation-link:focus {
   color: var(--logo-color);
   font-family: var(--text);
   font-size: 14px;
@@ -113,26 +111,26 @@
   letter-spacing: 0.28px;
 }
 
-.nav-list .nav-item + .nav-item {
+.navigation-list .navigation-list__item + .navigation-list__item {
   margin-left: 50px;
 }
 
-.nav-list .nav-link.current {
+.navigation-list .navigation-link.current {
   color: var(--logo-color);
 }
 
-.list-header {
+.contacts-header {
   list-style: none;
   display: flex;
   margin: 0;
   padding-left: 0;
 }
 
-.list-header .mail-tel + .mail-tel {
+.contacts-header .contacts-header__item + .contacts-header__item {
   margin-left: 40px;
 }
 
-.link-header {
+.header-link {
   color: var(--second-color);
   font-family: var(--text);
   font-size: 14px;
@@ -150,8 +148,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-header:hover,
-.link-header:focus {
+.header-link:hover,
+.header-link:focus {
   fill: var(--logo-color);
   color: var(--logo-color);
   font-family: var(--text);
@@ -162,25 +160,24 @@
   letter-spacing: 0.28px;
 }
 
-.mail {
+.header-link__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.mail {
   width: 16px;
   height: 12px;
 }
 
 .phone {
-  fill: currentColor;
-  margin-right: 10px;
   width: 10px;
   height: 16px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-/* first box index html */
+/* hero */
 
-.first-box {
+.hero {
   max-width: 1600px;
   background: #2f303a;
   padding-top: 200px;
@@ -198,7 +195,7 @@
   background-position: center;
 }
 
-.main-title {
+.hero-title {
   color: #fff;
   text-align: center;
   font-family: var(--text);
@@ -218,7 +215,7 @@
   width: 696px;
 }
 
-.main-button {
+.hero-button {
   border: none;
   border-radius: 4px;
   background: var(--logo-color);
@@ -583,21 +580,12 @@
   padding-bottom: 60px;
 }
 
-.foot-box {
+.footer-box {
   display: flex;
   align-items: baseline;
 }
 
-.web-foot {
-  color: var(--logo-color);
-  font-family: var(--logo-text);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.78px;
-  text-decoration: none;
-}
-
-.studio-foot {
+.studio-footer {
   color: #fff;
   font-family: var(--logo-text);
   font-size: 26px;
@@ -610,7 +598,7 @@
   margin-top: 28px;
 }
 
-.addr {
+.address__info {
   color: #fff;
   font-family: var(--text);
   font-size: 14px;
@@ -621,18 +609,18 @@
   margin-top: 0;
 }
 
-.foot-link-list {
+.address-list {
   list-style: none;
   padding-left: 0;
   margin-top: 12px;
   margin-bottom: 0;
 }
 
-.foot-link-list .item-foot + .item-foot {
+.address-list .address-list__item + .address-list__item {
   margin-top: 12px;
 }
 
-.link-foot {
+.contacts-footer {
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--text);
   font-size: 14px;
@@ -642,8 +630,8 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-foot:focus,
-.link-foot:hover {
+.contacts-footer:focus,
+.contacts-footer:hover {
   color: var(--logo-color);
   font-family: var(--text);
   font-size: 14px;
@@ -651,11 +639,13 @@
   letter-spacing: 0.28px;
 }
 
-.soc-box-foot {
+/*  */
+
+.official-pages {
   margin-left: 70px;
 }
 
-.join-us {
+.official-pages__title {
   font-family: var(--text);
   font-weight: 700;
   font-size: 14px;
@@ -664,25 +654,25 @@
   margin-top: 0;
 }
 
-.soc-list-foot {
+.page-list {
   list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-.soc-list-foot .soc-item-foot + .soc-item-foot {
+.page-list .page-list__item + .page-list__item {
   margin-left: 10px;
 }
 
-.soc-item-foot {
+.page-list__item {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
   height: 44px;
 }
 
-.soc-link-foot {
+.pages-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -693,26 +683,28 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-link-foot:hover,
-.soc-link-foot:focus {
+.pages-link:hover,
+.pages-link:focus {
   background-color: var(--logo-color);
 }
 
-.icon-foot {
+.pages-link__icon {
   fill: #ffffff;
   width: 20px;
   height: 20px;
   display: block;
 }
 
-.foot-form-field {
+/*  */
+
+.footer-form-area {
   display: flex;
   padding: 0;
   margin: 0;
   margin-left: 93px;
 }
 
-.foot-form-title {
+.footer-form-title {
   font-family: var(--text);
   font-weight: 700;
   font-size: 14px;
@@ -723,11 +715,11 @@
   margin-bottom: 20px;
 }
 
-.btn-input-foot {
+.button-input-foot {
   display: flex;
 }
 
-.foot-input {
+.footer-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
@@ -740,12 +732,12 @@
   background: rgba(33, 150, 243, 0);
 }
 
-.foot-submit-button {
+.footer-button {
   margin: 0;
   padding: 0;
 }
 
-.foot-form-button {
+.footer-button__form {
   border: none;
 
   border-radius: 4px;
@@ -758,15 +750,7 @@
   background: var(--logo-color);
 
   cursor: pointer;
-}
 
-.box-in-foot-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.foot-form-button-text {
   font-family: var(--text);
   font-weight: 700;
   font-size: 16px;
@@ -776,14 +760,11 @@
   text-align: center;
 }
 
-.icon-foot-form {
+.footer-button__icon {
   fill: var(--white-color);
   width: 24px;
   height: 24px;
   margin-left: 10px;
-
-  justify-content: center;
-  align-items: center;
 }
 /* modal */
 
@@ -985,6 +966,9 @@ textarea {
   background-color: var(--logo-color);
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button-submit-text {

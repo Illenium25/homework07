@@ -526,7 +526,7 @@
                 <button class="footer-button__form" type="submit">
                   Підписатися
                   <svg class="footer-button__icon">
-                    <use href="./images/sprite/sprite.svg#icon-telegram"></use>
+                    <use href="./images/sprite/sprite.svg#icon-send"></use>
                   </svg>
                 </button>
               </div>
@@ -539,41 +539,41 @@
     <!-- Modal -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="button-modal-close" data-modal-close>
-          <svg class="modal-close-icon">
+        <button class="modal-close" data-modal-close>
+          <svg class="modal-close__icon">
             <use href="./images/sprite/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form" action="">
-          <div class="label-input-box">
+          <div class="form-box">
             <label for="name" class="label">Ім'я</label>
-            <div class="input-icon-modal-box">
-              <input id="name" class="form-input" type="text" />
-              <svg class="modal-input-icon">
+            <div class="input-box">
+              <input id="name" class="input-box__input" type="text" />
+              <svg class="input-box__icon">
                 <use href="./images/sprite/sprite.svg#icon-person-modal"></use>
               </svg>
             </div>
           </div>
-          <div class="label-input-box">
+          <div class="form-box">
             <label for="tel" class="label">Телефон</label>
-            <div class="input-icon-modal-box">
-              <input id="tel" class="form-input" type="tel" />
-              <svg class="modal-input-icon">
+            <div class="input-box">
+              <input id="tel" class="input-box__input" type="tel" />
+              <svg class="input-box__icon">
                 <use href="./images/sprite/sprite.svg#icon-phone-modal"></use>
               </svg>
             </div>
           </div>
-          <div class="label-input-box">
+          <div class="form-box">
             <label for="email" class="label">Пошта</label>
-            <div class="input-icon-modal-box">
-              <input id="email" class="form-input" type="email" />
-              <svg class="modal-input-icon">
+            <div class="input-box">
+              <input id="email" class="input-box__input" type="email" />
+              <svg class="input-box__icon">
                 <use href="./images/sprite/sprite.svg#icon-email-modal"></use>
               </svg>
             </div>
           </div>
-          <div class="label-input-box">
+          <div class="form-box">
             <label class="label" for="comment">Коментар</label>
             <textarea
               class="comment"
@@ -582,16 +582,21 @@
             ></textarea>
           </div>
         </form>
-        <div class="checkbox-modal-box">
-          <input id="checkbox" type="checkbox" />
-          <label class="checkbox-label" for="checkbox">
-            Погоджуюся з розсилкою та приймаю
-            <a class="modal-checkbox-link" href="/">Умови договору</a>
+        <div class="checkbox-modal">
+          <label class="checkbox-label">
+            <input class="checkbox" type="checkbox" />
+            <span class="checkbox-icon">
+              <svg class="checkbox-icon__check">
+                <use href="./images/sprite/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span>
+              Погоджуюся з розсилкою та приймаю
+              <a class="checkbox-link" href="/">Умови договору</a>
+            </span>
           </label>
         </div>
-        <button class="button-modal-submit" type="submit">
-          <span class="button-submit-text">Відправити</span>
-        </button>
+        <button class="button-modal" type="submit">Відправити</button>
       </div>
     </div>
 

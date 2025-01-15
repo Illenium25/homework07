@@ -1,0 +1,38 @@
+textarea {
+  resize: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: $text;
+  color: $text-color;
+  background: $white-color;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.conteiner {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.head-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

@@ -1,38 +1,25 @@
-.work-section {
+.work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.work-title {
-  color: $text-color;
-  text-align: center;
-  font-family: $text;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  /*  */
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.work {
+.work__list {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-
-  &__picture {
-    position: relative;
-  }
+  margin-top: 50px;
 }
 
-.work .work__item + .work__item {
+.work__thoomb {
+  position: relative;
+}
+
+.work__list .work__item + .work__item {
   margin-left: 30px;
 }
 
-.picture {
+.work__picture {
   display: block;
 }
 

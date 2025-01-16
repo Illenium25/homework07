@@ -1,15 +1,15 @@
-.contacts-header {
+.contacts-header__list {
   list-style: none;
   display: flex;
   margin: 0;
   padding-left: 0;
 }
 
-.contacts-header .contacts-header__item + .contacts-header__item {
+.contacts-header__list .contacts-header__item + .contacts-header__item {
   margin-left: 40px;
 }
 
-.header-link {
+.contacts-header__link {
   color: $second-color;
   font-family: $text;
   font-size: 14px;
@@ -37,11 +37,11 @@
     line-height: normal;
     letter-spacing: 0.28px;
   }
+}
 
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-  }
+.contacts-header__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .mail {

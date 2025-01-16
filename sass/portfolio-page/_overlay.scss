@@ -23,8 +23,8 @@
   }
 }
 
-.project:hover .overlay,
-.project:focus .overlay {
+.project__item:hover .overlay,
+.project__item:focus .overlay {
   transform: translateY(0);
   opacity: 1;
 }

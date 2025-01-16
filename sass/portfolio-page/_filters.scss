@@ -1,4 +1,4 @@
-.filter {
+.filter__list {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -6,16 +6,16 @@
   margin: 0;
 }
 
-.filter .filter__item + .filter__item {
+.filter__list .filter__item + .filter__item {
   margin-left: 8px;
 }
 
-.filter .filter-button.current {
+.filter__list .filter__button.current {
   color: $white-color;
   background-color: $logo-color;
 }
 
-.filter-button {
+.filter__button {
   color: $text-color;
   background-color: #f5f4fa;
   font-family: $text;

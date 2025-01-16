@@ -13,11 +13,11 @@ textarea {
   background: $white-color;
 }
 
-.header {
+.header-container {
   border-bottom: 1px solid #ececec;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -25,14 +25,22 @@ textarea {
   padding-left: 15px;
 }
 
-.head-conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer {
+.footer-container {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.title {
+  color: $text-color;
+  text-align: center;
+  font-family: $text;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  /*  */
+  margin-top: 0;
+  margin-bottom: 0;
 }
